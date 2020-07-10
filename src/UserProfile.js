@@ -9,6 +9,7 @@ const UserProfile = () => {
   const minusClick = () => {actions.minus(1);};
 
   return (<section>
+    <h1>User Profile</h1>
     <button onClick={addClick}>+</button>
     &nbsp;[ <span>{count}</span> ]&nbsp;
     <button onClick={minusClick}>-</button>
