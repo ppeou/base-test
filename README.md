@@ -44,8 +44,7 @@ Requirement:
  * if user enter invalid charater, display error messsage 
  below text input and change border-color of input to red
  * write a unit test for this component
-
-![Initial Sate](tree/master/img/numeric-input-initial-state.png?raw=true "Title")
+![Initial State](img/numeric-input-initial-state.png?raw=true "Numeric Input Initial State")
 
 
 ## Ajax `#ajax`
