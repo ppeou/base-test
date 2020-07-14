@@ -44,8 +44,15 @@ Requirement:
  * if user enter invalid charater, display error messsage 
  below text input and change border-color of input to red
  * write a unit test for this component
+
+Initial State:
 ![Initial State](img/numeric-input-initial-state.png?raw=true "Numeric Input Initial State")
 
+Invalid State:
+![Invalid State](img/numeric-input-invalid-state.png?raw=true "Numeric Input Invalid State")
+
+Valid State:
+![Valid State](img/numeric-input-valid-state.png?raw=true "Numeric Input valid State")
 
 ## Ajax `#ajax`
 
@@ -56,6 +63,9 @@ Requirement:
    * [localhost:4002/products](localhost:4002/products): return ```{product}[]``` 
  * write a unit test for this component
 
+Valid State:
+![Valid State](img/featured-deal-valid-state.png?raw=true "Numeric Input valid State")
+
 ## Counter `#counter`
 
 Component Location: src/features/Counter/index.js
@@ -64,6 +74,12 @@ Requirement:
    * [+] button will increase value by 1 
    * [-] button will decrease value by 1
  * write a unit test for this component
+
+Initial State:
+![Inital State](img/counter-initial-state.png?raw=true "Numeric Input valid State")
+
+Changed State:
+![Changed State](img/counter-changed-state.png?raw=true "Numeric Input valid State")
 
 # Packages
 
