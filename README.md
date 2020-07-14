@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A React-JS assessment
 
-## Available Scripts
+This repo includes a set of tests that can be used to assess the skills of
+a candidate for a ReactJS position.
 
-In the project directory, you can run:
+## I want to work on the tests; what do I do?
+To use the tests, you will need to install [Node](https://nodejs.org/). Note
+that on Windows, there are some reports that you will need to restart
+after installing Node - see #12.
 
-### `yarn start`
+You can clone or download this repo. Once you have done so, from the root
+directory of the repo, run:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    npm install
+    npm start
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You can then view the app in your browser at
+[http://localhost:4001](http://localhost:4001).
 
-### `yarn test`
+Additionally, you can start rest-service by run:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    npm run start:api
+    
+You can then view the API in your browser at
+[http://localhost:4002](http://localhost:4002). Available API endpoints:
 
-### `yarn build`
+ * [product](http://localhost:4002/products)
+ * [cart](http://localhost:4002/products)
+ * [featured-deals](http://localhost:4002/products)
+ * [session](http://localhost:4002/products)
+ 
+# Features
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * [Numeric Input](#numeric-Input)
+  * [Ajax](#ajax)
+  * [Counter](#counter)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Numeric Input `#Numeric Input`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Component Location: src/features/NumericInput/index.js
+Requirement:
 
-### `yarn eject`
+ * write an input component  that will take only number 0 to 9 
+ * if user enter invalid charater, display error messsage 
+ below text input and change border-color of input to red
+ * write a unit test for this component
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Ajax `#ajax`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Component Location: src/features/FeaturedDeals/index.js
+Requirement:
+ * write a component to fetch & display products of Featured Deal
+   * [localhost:4002/featured-deals](localhost:4002/featured-deals): return ```int[]``` of product-id
+   * [localhost:4002/products](localhost:4002/products): return ```{product}[]``` 
+ * write a unit test for this component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Counter `#counter`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Packages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ * [react 16.13.1](https://reactjs.org/)
+ * [react-jss 10.3.0](https://cssinjs.org/react-jss?v=v10.3.0)
+ * [react-redux 4.0.5](https://react-redux.js.org/)
+ * [reselector 0.17.0](https://github.com/reduxjs/reselect)
+ * [json-server 0.16.1](https://github.com/typicode/json-server)
+ * [react-router-dom 5.2.0](https://reactrouter.com/web/guides/quick-start)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+# License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+<img alt="Creative Commons License" style="border-width:0" 
+src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.

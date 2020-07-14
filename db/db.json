@@ -1,12 +1,12 @@
 {
   "products": [
-    { "id": 101, "name": "Ring Camera Pro 2", "link": "/products/"},
-    { "id": 102, "name": "iPhone XS 128GB", "link": "/products/"},
-    { "id": 103, "name": "iPhone XS Case", "link": "/products/"},
-    { "id": 104, "name": "iPhone XS Case", "link": "/products/"},
-    { "id": 105, "name": "iPhone XS Case", "link": "/products/"},
-    { "id": 106, "name": "iPhone XS Case", "link": "/products/"}
-  ],
+  { "id": 101, "name": "Ring Camera Pro 2", "link": "/products/"},
+  { "id": 102, "name": "iPhone XS 128GB", "link": "/products/"},
+  { "id": 103, "name": "Samsung Galaxy S20", "link": "/products/"},
+  { "id": 104, "name": "Sony TV Bravia 65", "link": "/products/"},
+  { "id": 105, "name": "Apple - AirPods with Charging Case", "link": "/products/"},
+  { "id": 106, "name": "iRobot - Roomba i7+ Wi-Fi", "link": "/products/"}
+],
   "cart": [101,102,103],
   "featured-deals": [105,106],
   "session": {

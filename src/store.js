@@ -1,6 +1,7 @@
 import { createStore } from 'redux';
+const initialState = 0;
 
-const reducer = (state, action) => {
+const reducer = (state = initialState, action) => {
   const {type, value} = action;
   if(type === 'add') {
     return state + value;
@@ -12,7 +13,7 @@ const reducer = (state, action) => {
 };
 
 
-const store = createStore(reducer, 0);
+const store = createStore(reducer);
 const {dispatch} = store;
 
 
@@ -24,8 +25,6 @@ const minusAction = (value) => {
 };
 
 const actions = {add: addAction, minus: minusAction};
-window.store = store;
-
 
 export default store;
-export {actions};
+export {initialState, actions, reducer};
