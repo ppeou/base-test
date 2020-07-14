@@ -45,6 +45,9 @@ Requirement:
  below text input and change border-color of input to red
  * write a unit test for this component
 
+![Initial Sate](tree/master/img/numeric-input-initial-state.png?raw=true "Title")
+
+
 ## Ajax `#ajax`
 
 Component Location: src/features/FeaturedDeals/index.js
@@ -56,6 +59,12 @@ Requirement:
 
 ## Counter `#counter`
 
+Component Location: src/features/Counter/index.js
+Requirement: 
+ * write a component with buttons to increase or decrease redux-state value
+   * [+] button will increase value by 1 
+   * [-] button will decrease value by 1
+ * write a unit test for this component
 
 # Packages
 
@@ -65,9 +74,6 @@ Requirement:
  * [reselector 0.17.0](https://github.com/reduxjs/reselect)
  * [json-server 0.16.1](https://github.com/typicode/json-server)
  * [react-router-dom 5.2.0](https://reactrouter.com/web/guides/quick-start)
-
-
-
 
 # License
 
